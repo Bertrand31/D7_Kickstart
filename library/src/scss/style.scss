@@ -12,8 +12,4 @@
 @import "regions/*";
 @import "forms/*";
 
-@media print {
-    @import "print";
-}
-
-@import "custom";
+@media print { @import "print"; }
