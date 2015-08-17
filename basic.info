@@ -1,6 +1,6 @@
-name = Basic
+name = Basic CUA
 description = HTML5, SASS, Responsive grid base theme.
-screenshot = images/optimized/screenshot.gif
+screenshot = library/built/img/screenshot.gif
 core = "7.x"
 project = "basic"
 engine = phptemplate
