@@ -10,8 +10,7 @@ images_dir = "built/img"
 javascripts_dir = "built/js"
 fonts_dir = "built/fonts"
 
-output_style = :compressed # :expanded or :nested or :compact or :compressed
-#output_style = :expanded # :expanded or :nested or :compact or :compressed
+output_style = :expanded # :expanded or :nested or :compact or :compressed
 
 relative_assets = true
 

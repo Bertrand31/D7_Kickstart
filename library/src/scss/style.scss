@@ -1,11 +1,21 @@
 @import "compass/css3";
 @import "compass/reset";
+
+@import "variables";
+
 @import "config";
 
 @import "base";
+
+@import "blocks/*";
+@import "elements/*";
+@import "pages/*";
+@import "nodes/*";
+@import "regions/*";
+@import "forms/*";
 
 @media print {
     @import "print";
 }
 
-@import "_custom.scss";
+@import "custom";
