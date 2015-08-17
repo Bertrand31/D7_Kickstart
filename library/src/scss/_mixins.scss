@@ -13,7 +13,7 @@
 // Bourbon mixins: 	http://bourbon.io/docs/
 
 // Import variables for use in Mixins.
-@import "_variables.sass";
+@import "_variables.scss";
 
 // Rounded corners mixin.
 @mixin border-radius($top: 10px, $right: $top, $bottom: $top, $left: $right) {

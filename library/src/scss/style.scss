@@ -1,4 +1,4 @@
-@import "_config.sass";
+@import "_config.scss";
 
 // Font styles.
 body {
@@ -209,7 +209,7 @@ div.status {
 }
 
 // Import custom styles.
-@import "_custom.sass";
+@import "_custom.scss";
 
 // If you want to use the SCSS syntax, use this.
 @import "_custom.scss";
