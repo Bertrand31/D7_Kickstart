@@ -26,15 +26,10 @@ features[] = main_menu
 features[] = secondary_menu
 
 ; Stylesheets
-stylesheets[all][] = css/default.css
-stylesheets[all][] = css/layout.css
-stylesheets[all][] = css/style.css
-stylesheets[all][] = css/normalize.css
-stylesheets[print][] = css/print.css
+stylesheets[all][] = library/built/css/style.css
 
 ; Scripts
-scripts[] = js/build/scripts.js
-scripts[] = js/build/modernizr.js
+scripts[] = library/built/js/scripts.min.js
 
 settings[basic_tabs] = 1
 settings[basic_breadcrumb] = 1
@@ -50,4 +45,3 @@ version = "7.x-4.2"
 core = "7.x"
 project = "basic"
 datestamp = "1432153992"
-

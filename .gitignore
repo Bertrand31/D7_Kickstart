@@ -2,3 +2,15 @@
 *.sassc
 *.map
 grunt/node_modules
+
+##########
+## Misc ##
+##########
+
+#Grunt + Grunt output
+library/node_modules/
+library/src/javascripts/concat/
+library/built/
+
+#SASS Cache
+library/.sass-cache

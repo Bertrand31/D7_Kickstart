@@ -1,0 +1,42 @@
+{
+    "name": "Basic-D7-CUA",
+    "version": "1.0.0",
+    "description": "Fork du templates Drupal 7 'Basic' par Bertrand Junqua chez Comme un Arbre !",
+    "main": "index.js",
+    "devDependencies": {
+        "grunt": ">=0.4.5",
+        "grunt-cli": ">=0.1.13",
+        "grunt-concurrent": ">=2.0.1",
+        "grunt-contrib-clean": ">=0.6.0",
+        "grunt-contrib-compass": ">=1.0.3",
+        "grunt-contrib-concat": ">=0.5.1",
+        "grunt-contrib-imagemin": ">=0.9.4",
+        "grunt-contrib-jshint": ">=0.11.2",
+        "grunt-contrib-uglify": ">=0.9.1",
+        "grunt-contrib-watch": ">=0.6.1",
+        "grunt-newer": ">=1.1.1",
+        "jshint-stylish": ">=2.0.1"
+    },
+    "scripts": {
+        "test": "grunt compass"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://dev-cua@bitbucket.org/dev-cua/basic-d7-cua.git"
+    },
+    "keywords": [
+        "Drupal",
+        "Bones",
+        "Grunt",
+        "NodeJS",
+        "NPM",
+        "SASS",
+        "Compass"
+    ],
+    "author": "Bertrand Junqua",
+    "license": "GPL",
+    "bugs": {
+        "url": "https://bitbucket.org/dev-cua/basic-d7-cua/issues/"
+    },
+    "homepage": "https://bitbucket.org/dev-cua/basic-d7-cua/"
+}
