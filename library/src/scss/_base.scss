@@ -46,9 +46,6 @@
 }
 
 // "Skip to Main Content" link
-// ---------------------------
-// This link useful for both visually impaired people and those with mobility impairments
-// who cannot use a mouse. http://www.webaim.org/techniques/css/invisiblecontent/
 
 #skip a {
     &:link, &:hover, &:visited {
