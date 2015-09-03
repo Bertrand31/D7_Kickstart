@@ -1,9 +1,8 @@
-# Require any additional compass plugins here.
+# Plugins Compass
 require 'susy'
 require 'sass-globbing'
 
-# Set this to the root of your project when deployed:
-http_path = "/stsebastien"
+http_path = "/monprojet"
 css_dir = "built/css"
 sass_dir = "src/scss"
 images_dir = "built/img"
