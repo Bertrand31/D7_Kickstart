@@ -28,6 +28,32 @@ a {
     }
 }
 
+thead {
+    display: table-header-group;
+}
+
+tr, img {
+    page-break-inside: avoid;
+}
+
+img {
+    max-width: 100% !important;
+}
+
+@page {
+    margin: 0.5cm;
+}
+
+p, h2, h3 {
+    orphans: 3;
+    widows: 3;
+}
+
+h2,
+h3 {
+    page-break-after: avoid;
+}
+
 // CSS2 selector to add visible href after links.
 #content a {
     &:link:after, &:visited:after {
