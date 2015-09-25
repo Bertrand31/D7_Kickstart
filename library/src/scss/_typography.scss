@@ -1,0 +1,43 @@
+//@include font-face( 'Droid Sans', font-files('droidsans-webfont.eot', 'droidsans-webfont.ttf', 'droidsans-webfont.woff2'));
+
+body {
+    font-size: 13px;
+    line-height: 1.3;
+    font-family:$ss-stack;
+    letter-spacing: 0.01em;
+    color:$text-color;
+}
+// Liens
+a {
+    text-decoration:none;
+    color:$text-color;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.3em;
+    font-family:$ss-stack;
+    margin:0 0 .8em;
+}
+h1 {
+    font-size: 2em;
+    &.title { margin:.6em 0; }
+}
+h2 {
+}
+h3 {
+}
+h4 {
+}
+h5 {
+}
+h6 {
+}
+
+p {
+}
+strong {
+    font-weight:bold;
+}
+em {
+    font-style:italic;
+}

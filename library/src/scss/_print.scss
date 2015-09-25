@@ -1,7 +1,4 @@
-// Use this stylesheet for print styles only.
-* {
-    background-color: transparent;
-}
+* { background-color: transparent; }
 
 .sidebar,
 #navigation,
@@ -15,9 +12,7 @@
     display: none;
 }
 
-#page {
-    width: 100%;
-}
+#page { width: 100%; }
 
 #content,
 #content #content-inner,
@@ -28,11 +23,8 @@
 }
 
 a {
-    &:hover,
-    &:active,
-    &:link,
-    &:visited {
-        color: black;
+    &:hover, &:active, &:link, &:visited {
+        color: $text-color;
     }
 }
 
