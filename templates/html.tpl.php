@@ -3,7 +3,7 @@
 <head>
   <?php print $head; ?>
   <title><?php print $head_title; ?></title>
-  <script src="//80.236.14.128:35729/livereload.js"></script>
+  <script src="//192.168.0.38:35729/livereload.js"></script>
 
   <?php print $styles; ?>
   <?php print $scripts; ?>
