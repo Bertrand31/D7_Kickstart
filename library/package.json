@@ -4,7 +4,6 @@
   "description": "Fork du templates Drupal 7 'Basic' par Bertrand Junqua chez Comme un Arbre !",
   "main": "index.js",
   "devDependencies": {
-    "connect-livereload": "^0.5.3",
     "gulp": "^3.9.0",
     "gulp-compass": "^2.1.0",
     "gulp-concat": "^2.6.0",
