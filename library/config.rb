@@ -13,4 +13,6 @@ output_style = :expanded # :expanded or :nested or :compact or :compressed
 
 relative_assets = true
 
+sourcemap = true
+
 # line_comments = false
