@@ -9,7 +9,6 @@ grunt/node_modules
 
 #Grunt + Grunt output
 library/node_modules/
-library/src/javascripts/concat/
 library/built/
 
 #SASS Cache
