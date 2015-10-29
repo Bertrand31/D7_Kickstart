@@ -1,3 +1,6 @@
+// Extends
+%hide { display:none; }
+
 // Lien "Aller directement à la navigation"
 #skip a {
     &:link, &:hover, &:visited {
@@ -114,11 +117,11 @@ div.messages {
     margin:0 0 1em;
     font-size:1.1em;
     color:#fff;
-    background:$fushia;
+    background:$neutre;
 }
-div.warning { background:$orangeclair; }
-div.error { background:$orangerouge; }
-div.status { background: $vertbleu; }
+div.warning { background:$attention; }
+div.error { background:$erreur; }
+div.status { background: $info; }
 
 //Tableaux
 table {
