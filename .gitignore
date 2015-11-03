@@ -1,13 +1,12 @@
 *.scssc
 *.sassc
 *.map
-grunt/node_modules
 
 ##########
 ## Misc ##
 ##########
 
-#Grunt + Grunt output
+#Dépendances + Gulp output
 library/node_modules/
 library/built/
 
