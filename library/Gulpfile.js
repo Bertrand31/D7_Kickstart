@@ -68,6 +68,7 @@ gulp.task('compass', function () {
 
 gulp.task('imagemin', function () {
     return gulp.src(chemins.imagesSrc)
+        .pipe(plumber())
         .pipe(newer(chemins.imagesDest))
         .pipe(imagemin({
             progressive: true,
