@@ -3,7 +3,7 @@
 <head>
     <?php print $head; ?>
     <title><?php print $head_title; ?></title>
-    <script src="//192.168.0.38:35729/livereload.js?snipver=1"></script>
+    <?php if (gethostname() == "dev") { echo '<script src="//80.236.14.128:35729/livereload.js"></script>'; } ?>
 
     <link rel="apple-touch-icon" sizes="57x57" href="<?php echo $GLOBALS['base_url']; ?>/sites/all/themes/basic/library/buit/img/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="<?php echo $GLOBALS['base_url']; ?>/sites/all/themes/basic/library/buit/img/apple-touch-icon-60x60.png">
