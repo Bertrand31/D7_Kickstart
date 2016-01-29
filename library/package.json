@@ -1,7 +1,7 @@
 {
   "name": "Basic-D7-CUA",
   "version": "1.0.0",
-  "description": "Fork du templates Drupal 7 'Basic' par Bertrand Junqua chez Comme un Arbre !",
+  "description": "Fork du template Drupal 7 'Basic' par Bertrand Junqua chez Comme un Arbre !",
   "main": "index.js",
   "devDependencies": {
     "gulp": "^3.9.0",
@@ -28,7 +28,7 @@
   },
   "keywords": [
     "Drupal",
-    "Baisc",
+    "Basic",
     "Gulp",
     "NodeJS",
     "NPM",
