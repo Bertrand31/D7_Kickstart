@@ -7,11 +7,11 @@
 @import 'typography';
 
 // Éléments spécifiques
-@import 'regions/*';
-@import 'blocks/*';
-@import 'pages/*';
-@import 'nodes/*';
-@import 'forms/*';
+@import 'regions/regions.sidebar';
+@import 'blocks/blocks.default';
+@import 'pages/pages.front';
+@import 'nodes/nodes.default';
+@import 'forms/forms.default';
 
 // Disposition
 @import 'includes/neat/neat';
