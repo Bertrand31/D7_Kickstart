@@ -3,22 +3,23 @@
 ****************/
 
 // GÉNÉRAL
-var gulp   = require('gulp'),
-    plumber = require('gulp-plumber'),
-    newer = require('gulp-newer'),
-    livereload = require('gulp-livereload');
+var gulp        = require('gulp'),
+    plumber     = require('gulp-plumber'),
+    newer       = require('gulp-newer'),
+    sourcemaps  = require('gulp-sourcemaps'),
+    livereload  = require('gulp-livereload');
 
 // CSS
-var compass = require('gulp-compass');
+var sass        = require('gulp-sass');
 
 // JS
-var jshint = require('gulp-jshint'),
-    concat = require('gulp-concat'),
-    uglify = require('gulp-uglify');
+var jshint      = require('gulp-jshint'),
+    concat      = require('gulp-concat'),
+    uglify      = require('gulp-uglify');
 
 // IMAGES
-var imagemin = require('gulp-imagemin'),
-    pngquant = require('imagemin-pngquant'),
+var imagemin    = require('gulp-imagemin'),
+    pngquant    = require('imagemin-pngquant'),
     imageminSvgo = require('imagemin-svgo');
 
 /***************
@@ -26,10 +27,10 @@ var imagemin = require('gulp-imagemin'),
 ***************/
 
 var chemins = {
-    jsSrc: ['src/javascripts/libs/*.js', 'src/javascripts/scripts.js'],
+    jsFront: 'src/javascripts/**/*.js',
     jsDest: 'built/js/',
     cssSrc: 'src/**/*.scss',
-    cssDest: 'built/css/',
+    cssDest: 'built/',
     imagesSrc: 'src/images/**/*',
     imagesDest: 'built/img/'
 };
@@ -38,18 +39,16 @@ var chemins = {
  * TÂCHES *
 ***********/
 
-gulp.task('jscrush', function () {
-    return gulp.src(chemins.jsSrc)
+gulp.task('jsFront', function () {
+    return gulp.src(chemins.jsFront)
         .pipe(plumber())
-        .pipe(newer('scripts.min.js'))
         .pipe(jshint())
         .pipe(jshint.reporter('jshint-stylish'))
-        .pipe(concat('scripts.min.js'))
-        .pipe(uglify())
+        .pipe(uglify({ outSourceMap: true }))
         .pipe(gulp.dest(chemins.jsDest));
 });
 
-gulp.task('compass', function () {
+gulp.task('sass', function () {
     return gulp.src(chemins.cssSrc)
         .pipe(plumber({
             errorHandler: function (err) {
@@ -57,11 +56,9 @@ gulp.task('compass', function () {
                 this.emit('end');
             }
         }))
-        .pipe(compass({
-            config_file: 'config.rb',
-            sass: 'src/scss',
-            css: chemins.cssDest
-        }))
+        .pipe(sourcemaps.init())
+        .pipe(sass({ errorLogToConsole: true }))
+        .pipe(sourcemaps.write())
         .pipe(gulp.dest(chemins.cssDest))
         .pipe(livereload());
 });
@@ -81,7 +78,7 @@ gulp.task('imagemin', function () {
 // Commits gather, and now my watch begins. I am the watcher on the files.
 gulp.task('default', function() {
     livereload.listen();
-    gulp.watch(chemins.jsSrc, ['jscrush']);
-    gulp.watch(chemins.cssSrc, ['compass']);
+    gulp.watch(chemins.jsFront, ['jsFront']);
+    gulp.watch(chemins.cssSrc, ['sass']);
     gulp.watch(chemins.imagesSrc, ['imagemin']);
 });

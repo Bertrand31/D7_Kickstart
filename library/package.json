@@ -5,22 +5,23 @@
   "main": "index.js",
   "devDependencies": {
     "gulp": "^3.9.0",
-    "gulp-plumber": "^1.0.1",
-    "gulp-newer": "^1.0.0",
-    "gulp-filesize": "0.0.6",
     "gulp-concat": "^2.6.0",
-    "gulp-compass": "^2.1.0",
-    "gulp-livereload": "^3.8.1",
-    "gulp-uglify": "^1.4.2",
-    "gulp-imagemin": "^2.3.0",
-    "imagemin-pngquant": "^4.2.0",
-    "imagemin-svgo": "^4.1.2",
-    "jshint": "^2.8.0",
+    "gulp-filesize": "0.0.6",
+    "gulp-imagemin": "^2.4.0",
     "gulp-jshint": "^2.0.0",
-    "jshint-stylish": "^2.0.1"
+    "gulp-livereload": "^3.8.1",
+    "gulp-newer": "^1.1.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-sass": "^2.1.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.1",
+    "imagemin-pngquant": "^4.2.0",
+    "imagemin-svgo": "^4.2.0",
+    "jshint": "^2.9.1",
+    "jshint-stylish": "^2.1.0"
   },
   "scripts": {
-    "test": "gulp compass"
+    "test": "gulp sass"
   },
   "repository": {
     "type": "git",
@@ -33,7 +34,8 @@
     "NodeJS",
     "NPM",
     "SASS",
-    "Compass"
+    "Bourbon",
+    "Neat"
   ],
   "author": "Bertrand Junqua",
   "license": "GPL-3.0",
