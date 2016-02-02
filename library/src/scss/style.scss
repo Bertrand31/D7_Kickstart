@@ -1,4 +1,4 @@
-// Compass
+// Bourbon
 @import 'includes/bourbon/bourbon';
 
 // Base
@@ -13,7 +13,7 @@
 @import 'nodes/nodes.default';
 @import 'forms/forms.default';
 
-// Disposition
+// Neat & Disposition
 @import 'includes/neat/neat';
 @import 'layout/base';
 @media screen and (min-width:481px) { @import 'layout/481'; }
