@@ -1,0 +1,11 @@
+.wrap {
+    @include outer-container;
+    width:90%;
+    max-width:1200px;
+}
+#main {
+    @include span-columns(8);
+}
+#sidebar1 {
+    @include span-columns(4);
+}

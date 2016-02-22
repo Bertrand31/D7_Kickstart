@@ -1,5 +1,7 @@
 // Bourbon
 @import 'includes/bourbon/bourbon';
+@import 'includes/foundation';
+@import 'includes/slick';
 
 // Base
 @import 'variables';
@@ -7,10 +9,18 @@
 @import 'typography';
 
 // Éléments spécifiques
+// Régions
 @import 'regions/regions.sidebar';
+@import 'regions/regions.header';
+@import 'regions/regions.footer';
+// Blocs
 @import 'blocks/blocks.default';
+@import 'blocks/blocks.menu';
+// Pages
 @import 'pages/pages.front';
+// Nœuds
 @import 'nodes/nodes.default';
+// Formulaires
 @import 'forms/forms.default';
 
 // Neat & Disposition

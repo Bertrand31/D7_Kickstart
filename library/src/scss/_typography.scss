@@ -1,10 +1,9 @@
-//@include font-face( 'Droid Sans', font-files('droidsans-webfont.eot', 'droidsans-webfont.ttf', 'droidsans-webfont.woff2'));
+// @include font-face("passionsconflictrob-webfont", "../fonts/passionsconflictrob-webfont", $file-formats: svg ttf eot woff2 woff);
 
 body {
     font-size: 13px;
     line-height: 1.3;
     font-family:$ss-stack;
-    letter-spacing: 0.01em;
     color:$text-color;
 }
 // Liens
@@ -34,24 +33,17 @@ h6 {
 }
 
 p {
-  -ms-word-wrap: break-word;
-  word-break: break-word; //non-standart css for webkit
-  word-wrap: break-word;
-  // cleaning up the ragged lines and breaks
-  -webkit-hyphens: auto;
-     -moz-hyphens: auto;
-          hyphens: auto;
-  // sets a minimum number of characters before and after the break
-  -webkit-hyphenate-before: 2;
-   -webkit-hyphenate-after: 3;
-           hyphenate-lines: 3;
-  // enabling fancy ligatures when available
-  -webkit-font-feature-settings: "liga", "dlig";
-   -moz-font-feature-settings: "liga=1, dlig=1";
-      -ms-font-feature-settings: "liga", "dlig";
-       -o-font-feature-settings: "liga", "dlig";
-          font-feature-settings: "liga", "dlig";
+    @include word-wrap(break-word);
+    // cleaning up the ragged lines and breaks
+    @include hyphens(auto);
+    // sets a minimum number of characters before and after the break
+    -webkit-hyphenate-before: 2;
+    -webkit-hyphenate-after: 3;
+    hyphenate-lines: 3;
+    // enabling fancy ligatures when available
+    @include font-feature-settings("liga", "dlig", "kern" true);
 }
+
 strong {
     font-weight:bold;
 }

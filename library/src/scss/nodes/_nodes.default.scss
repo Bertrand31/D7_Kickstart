@@ -4,6 +4,62 @@
 // Individual node styles are saved as their own files in the format of
 //  - Example: _nodes.content-type.scss
 
-.node {
-  &.node-teaser {}
+.hentry {
+    clear:both;
+    margin-bottom:2.2em;
+    .alignleft {
+        float:left;
+        margin-right:1em;
+    }
+    .alignright {
+        float:right;
+        margin-left:.5em;
+    }
+    .aligncenter {
+        display:block;
+        margin:0 auto;
+    }
+    .byline {
+        font-size:.9em;
+        color:#777;
+        font-style:italic;
+        padding-bottom:.5em;
+    }
+    .wp-caption {
+        background:#eee;
+        border:1px solid #ccc;
+        padding:.5em;
+        text-align:center;
+        box-sizing:border-box;
+        max-width:100%;
+        img {
+            width:100%;
+            display:block;
+            padding:0;
+        }
+        .wp-caption-text {
+            padding-top:.8em;
+            font-size:.95em;
+            font-style:italic;
+            color:#555;
+        }
+    }
+    .entry-content {
+        h2,h3,h4,h5,h6 {
+            margin-top:.8em;
+        }
+        p {
+            padding-bottom:.5em;
+        }
+        a {
+            text-decoration:underline;
+        }
+        ul {
+            list-style:disc;
+        }
+        li {
+            margin-left:1.15em;
+        }
+    }
 }
+
