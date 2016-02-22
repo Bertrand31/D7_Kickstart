@@ -26,10 +26,10 @@ features[] = main_menu
 features[] = secondary_menu
 
 ; Stylesheets
-stylesheets[all][] = library/built/css/style.css
+stylesheets[all][] = library/built/scss/style.css
 
 ; Scripts
-scripts[] = library/built/js/scripts.min.js
+scripts[] = library/built/js/scripts.js
 
 settings[basic_tabs] = 1
 settings[basic_breadcrumb] = 1
