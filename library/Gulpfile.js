@@ -45,6 +45,7 @@ gulp.task('jsFront', function () {
         .pipe(jshint())
         .pipe(jshint.reporter('jshint-stylish'))
         .pipe(uglify({ outSourceMap: true }))
+        .pipe(concat('scripts.min.js'))
         .pipe(gulp.dest(chemins.jsDest));
 });
 
